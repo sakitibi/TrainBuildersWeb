@@ -13,5 +13,5 @@ document.getElementById('exit').addEventListener('click', function() {
         slp = Math.floor(Math.random() * 9000 + 1000);
         alert('読み込み中... 絶対に閉じないで下さい！')
         sleep(slp);
-        alert('こちらのリンクを開いて下さい file:///TrainBuilders Webフォルダがあるディレクトリのパス/TrainBuilders Web/TrainBuilders.app/start.html');
+        alert('こちらのリンクを開いて下さい file:///TrainBuildersアプリケーションがあるディレクトリのパス/TrainBuilders.app/start.html');
     });
