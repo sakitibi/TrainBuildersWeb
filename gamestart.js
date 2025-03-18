@@ -1,5 +1,5 @@
 document.getElementById('home-window button').addEventListener('click', function() {
-    location.href = 'DownLoad';
+    location.href = 'https://github.com/sakitibi/TrainBuildersWeb/releases/download/TBW/TrainBuilders.Web.dmg.zip';
     // Add your game start logic here
     });
 document.getElementById('settings').addEventListener('click', function() {
