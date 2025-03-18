@@ -8,6 +8,6 @@ document.getElementById('settings').addEventListener('click', function() {
 });
 
 document.getElementById('exit').addEventListener('click', function() {  
-    location.href = 'file:///Users/sakitibi/Desktop/TrainBuilders%20web/TrainBuilders.app/start.html';
+    alert('file:///Users/sakitibi/Desktop/TrainBuilders%20web/TrainBuilders.app/start.html');
     // Add your exit logic here
 });
