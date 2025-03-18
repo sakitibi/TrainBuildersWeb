@@ -1,5 +1,5 @@
 document.getElementById('home-window button').addEventListener('click', function() {
-    location.href = './start.html';
+    location.href = 'DownLoad';
     // Add your game start logic here
     });
 document.getElementById('settings').addEventListener('click', function() {
@@ -8,6 +8,6 @@ document.getElementById('settings').addEventListener('click', function() {
 });
 
 document.getElementById('exit').addEventListener('click', function() {  
-    alert('Exit Clicked!');
+    location.href = 'file:///Users/sakitibi/Desktop/TrainBuilders Web/TrainBuilders.app/start.html';
     // Add your exit logic here
 });
