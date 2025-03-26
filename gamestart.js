@@ -1,5 +1,5 @@
 document.getElementById('home-window button').addEventListener('click', function() {
-    location.href = 'https://github.com/sakitibi/TrainBuildersWeb/releases/download/TBW/TrainBuilders.Web.dmg';
+    window.open("https://sakitibi-com9.webnode.jp/api/trainbuilders/login/24ac77a0-013e-45ae-97d1-b6cc59fb958a/", "popupWindow", "width=800,height=700");
     // Add your game start logic here
     });
 document.getElementById('settings').addEventListener('click', function() {
