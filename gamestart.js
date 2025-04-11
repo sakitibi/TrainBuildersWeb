@@ -26,8 +26,7 @@ function startGame(){
 function QRcodestartGame(){
     let file = document.getElementById('file');
     let filepath = document.getElementById('filepath');
-    file.innerHTML = "このQRコードを読み取って下さい";
-    filepath.innerHTML = "<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+    let qrcode = "<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="240.000000pt" height="240.000000pt" viewBox="0 0 240.000000 240.000000"
  preserveAspectRatio="xMidYMid meet">
 <metadata>
@@ -164,4 +163,6 @@ m720 0 l0 -300 -300 0 -300 0 0 300 0 300 300 0 300 0 0 -300z"/>
 <path d="M3780 480 l0 -60 180 0 180 0 0 60 0 60 -180 0 -180 0 0 -60z"/>
 </g>
 </g></svg>";
+    file.innerHTML = "このQRコードを読み取って下さい";
+    filepath.innerHTML = `${qrcode}`;
 }
