@@ -1,7 +1,7 @@
 document.getElementById('home-window button').addEventListener('click', function() {
     openPopup();
 });
-document.getElementById('home-window button').addEventListener('click', function() {
+document.getElementById('start button').addEventListener('click', function() {
     startGame();
 });
 document.getElementById('settings').addEventListener('click', function() {
