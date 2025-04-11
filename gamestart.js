@@ -13,6 +13,12 @@ document.getElementById('settings').addEventListener('click', function() {
 document.getElementById('exit').addEventListener('click', function() {
     location.href = 'https://github.com/sakitibi/TrainBuildersWeb';
 });
+document.getElementById('follow-Youtube').addEventListener('click', function() {
+    FollowYoutube();
+});
+document.getElementById('follow-X').addEventListener('click', function() {
+    location.href = "https://x.com/torebiru";
+});
 
 function openPopup() {
   window.open("https://sakitibi-com9.webnode.jp/api/trainbuilders/login/24ac77a0-013e-45ae-97d1-b6cc59fb958a/", "popupWindow", "width=800,height=600");
@@ -28,4 +34,12 @@ function QRcodestartGame(){
     let filepath = document.getElementById('filepath');
     file.innerHTML = "このQRコードを読み取って下さい";
     filepath.innerHTML = '<img src="./QR_354266.svg" alt=""  onselectstart="return false;" onmousedown="return false;" />';
+}
+function FollowYoutube(){
+    let Dev = Math.floor(Math.random() * 2);
+    if (Dev === 0){
+        location.href = "https://youtube.com/@12nintvSakitibi";
+    } else {
+        location.href = "https://youtube.com/@torebiru";
+    }
 }
