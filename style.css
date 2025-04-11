@@ -45,9 +45,3 @@ a {
     color: #ffffff;
     text-decoration: none;
 }
-
-img {
-    user-drag: none;
-	-webkit-user-drag: none;
-	-moz-user-select: none;
-}
