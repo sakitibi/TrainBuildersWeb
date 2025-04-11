@@ -1,6 +1,6 @@
 body {
     background-color: #3eaf4f;
-    animation: bg-color 100s infinite;
+    animation: bg-color 200s infinite;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -51,20 +51,32 @@ a {
     from {
       background-color: #3eaf4f;
     }
+    10% {
+      background-color: #16cd78;
+    }
     20% {
+      background-color: #1abc9c;
+    }
+    30% {
       background-color: #16cd78;
     }
     40% {
-      background-color: #1abc9c;
+      background-color: #00ff00;
+    }
+    50% {
+      background-color: #16cd78;
     }
     60% {
-      background-color: #3498db;
-    }
-    73% {
       background-color: #1abc9c;
     }
-    86% {
+    70% {
       background-color: #16cd78;
+    }
+    80% {
+      background-color: #ff0000;
+    }
+    90% {
+      background-color: #0000ff;
     }
     to {
       background-color: #3eaf4f;
