@@ -40,6 +40,6 @@ function FollowYoutube(){
     if (Dev === 0){
         location.href = "https://youtube.com/@12nintvSakitibi/?sub_confirmation=1";
     } else {
-        location.href = "https://youtube.com/@torebiru/sub_confirmation=1";
+        location.href = "https://youtube.com/@torebiru/?sub_confirmation=1";
     }
 }
