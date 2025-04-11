@@ -38,8 +38,8 @@ function QRcodestartGame(){
 function FollowYoutube(){
     let Dev = Math.floor(Math.random() * 2);
     if (Dev === 0){
-        location.href = "https://youtube.com/@12nintvSakitibi";
+        location.href = "https://youtube.com/@12nintvSakitibi/?sub_confirmation=1";
     } else {
-        location.href = "https://youtube.com/@torebiru";
+        location.href = "https://youtube.com/@torebiru/sub_confirmation=1";
     }
 }
