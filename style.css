@@ -1,6 +1,6 @@
 body {
     background-color: #3eaf4f;
-    animation: bg-color 10s infinite;
+    animation: bg-color 100s infinite;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
