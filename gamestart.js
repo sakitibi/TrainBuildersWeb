@@ -17,6 +17,6 @@ function openPopup() {
 function startGame(){
     let file = document.getElementById('file');
     let filepath = document.getElementById('filepath');
-    file.innerHTML = "このURLを開いて下さいfile:///Applications/TrainBuilders.app/Contents/Resources/.start.html";
+    file.innerHTML = "このURLを開いて下さい";
     filepath.innerHTML = "file:///Applications/TrainBuilders.app/Contents/Resources/.start.html";
 }
