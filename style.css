@@ -1,11 +1,12 @@
-.body {
+body {
+    background-color: #3eaf4f;
+    animation: bg-color 10s infinite;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #3eaf4f;
 }
 
 .home-window {
@@ -44,4 +45,28 @@
 a {
     color: #ffffff;
     text-decoration: none;
+}
+
+@keyframes bg-color {
+    from {
+      background-color: #3eaf4f;
+    }
+    20% {
+      background-color: #16cd78;
+    }
+    40% {
+      background-color: #1abc9c;
+    }
+    60% {
+      background-color: #3498db;
+    }
+    73% {
+      background-color: #1abc9c;
+    }
+    86% {
+      background-color: #16cd78;
+    }
+    to {
+      background-color: #3eaf4f;
+    }
 }
