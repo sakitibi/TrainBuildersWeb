@@ -27,5 +27,5 @@ function QRcodestartGame(){
     let file = document.getElementById('file');
     let filepath = document.getElementById('filepath');
     file.innerHTML = "このQRコードを読み取って下さい";
-    filepath.innerHTML = '<img src="https://qr.quel.jp/tmp/262e6306800f54e463336cb1925191dbb2795682.png" />';
+    filepath.innerHTML = '<img src="./QR_354266.svg" />';
 }
