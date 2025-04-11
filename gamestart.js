@@ -16,10 +16,7 @@ function openPopup() {
 }
 function startGame(){
     alert("このURLを開いて下さい\nfile:///Applications/TrainBuilders.app/Contents/Resources/.start.html");
-    document.execCommand('copy')
-}
-function startGame() {
-  var copyTarget = document.getElementById("file:///Applications/TrainBuilders.app/Contents/Resources/.start.html");
-  copyTarget.select();
-  document.execCommand("copy");
+    var copyTarget = document.getElementById("file:///Applications/TrainBuilders.app/Contents/Resources/.start.html");
+    copyTarget.select();
+    document.execCommand("copy");
 }
