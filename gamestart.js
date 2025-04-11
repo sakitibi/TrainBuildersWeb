@@ -15,8 +15,6 @@ function openPopup() {
   window.open("https://sakitibi-com9.webnode.jp/api/trainbuilders/login/24ac77a0-013e-45ae-97d1-b6cc59fb958a/", "popupWindow", "width=800,height=600");
 }
 function startGame(){
-    alert("このURLを開いて下さい\nfile:///Applications/TrainBuilders.app/Contents/Resources/.start.html");
-    var copyTarget = document.getElementById("file:///Applications/TrainBuilders.app/Contents/Resources/.start.html");
-    copyTarget.select();
-    document.execCommand("copy");
+    let file = document.getElementById('file');
+    file.innerHTML = "このURLを開いて下さい\nfile:///Applications/TrainBuilders.app/Contents/Resources/.start.html";
 }
