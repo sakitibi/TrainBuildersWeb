@@ -13,10 +13,10 @@ document.getElementById('settings').addEventListener('click', function() {
 document.getElementById('exit').addEventListener('click', function() {
     location.href = 'https://github.com/sakitibi/TrainBuildersWeb';
 });
-document.getElementById('follow-Youtube').addEventListener('click', function() {
+document.getElementById('follow-youtube').addEventListener('click', function() {
     FollowYoutube();
 });
-document.getElementById('follow-X').addEventListener('click', function() {
+document.getElementById('follow-x').addEventListener('click', function() {
     location.href = "https://x.com/torebiru";
 });
 
