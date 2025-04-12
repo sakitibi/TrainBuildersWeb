@@ -27,7 +27,7 @@ function startGame(){
     let file = document.getElementById('file');
     let filepath = document.getElementById('filepath');
     file.innerHTML = "このURLを開いて下さい";
-    filepath.innerHTML = "file:///Applications/TrainBuilders.app/Contents/Resources/.start.html";
+    filepath.innerHTML = "file:///Applications/TrainBuilders.app/Contents/Resources/index.html";
 }
 function QRcodestartGame(){
     let file = document.getElementById('file');
