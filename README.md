@@ -1,6 +1,7 @@
 # TrainBuildersへようこそ!
 ## 対応OS:MacOS
 ## 自動更新:不可能
+### (アップデートが入りましたら12ninアカウントのメールアドレスへお送りします)
 ## 12ninアカウント:必須
 <h3>
   <a href="https://sakitibi-com9.webnode.jp/page/10">TrainBuildersの利用規約</a>
