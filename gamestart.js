@@ -46,11 +46,22 @@ function FollowYoutube(){
 
 // 他と絶対かぶらない変数名に変更！
 const loadingScreenElement = document.querySelector(".loading");
+let loadRandomTime = Math.floor(Math.random() * 101 / 10);
+let yonjuu = Math.floor(Math.random() * 20 + 2);
 
-let loadRandomTime = Math.floor(Math.random() * 30000);
-
-window.addEventListener("load", () => {
-    setTimeout(() => {
-        loadingScreenElement.classList.add("loaded");
-    }, loadRandomTime);
-});
+let progress = 0;
+const fill = document.getElementById('progress-fill');
+const interval = setInterval(() => {
+  progress += Math.random() * loadRandomTime; // ランダムに進む
+  loadRandomTime = Math.floor(Math.random() * 101 / 10);
+  if (progress >= 40 && yonjuu > 0) {
+    progress = 40;
+    yonjuu = yonjuu - 1;
+  }
+  if (progress >= 110) {
+    progress = 110;
+    clearInterval(interval);
+    loadingScreenElement.classList.add("loaded");
+  }
+  fill.style.width = progress + '%';
+}, 200);
