@@ -43,3 +43,14 @@ function FollowYoutube(){
         location.href = "https://youtube.com/@torebiru/?sub_confirmation=1";
     }
 }
+
+// 他と絶対かぶらない変数名に変更！
+const loadingScreenElement = document.querySelector(".loading");
+
+let loadRandomTime = Math.floor(Math.random() * 30000);
+
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        loadingScreenElement.classList.add("loaded");
+    }, loadRandomTime);
+});
