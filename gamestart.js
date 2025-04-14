@@ -22,7 +22,7 @@ document.getElementById('follow-x').addEventListener('click', function() {
 
 function openPopup() {
     var uaOs = window.navigator.userAgent.toLowerCase();
-    if (uaOs.indexOf("mac os x") !== -1) {
+    if (uaOs.indexOf("windows nt") !== -1) {
         window.open("https://sakitibi-com9.webnode.jp/api/trainbuilders/login/24ac77a0-013e-45ae-97d1-b6cc59fb958a/", "popupWindow", "width=800,height=600");
     } else {
         alert("エラーメッセージ このOSは対応していません");
@@ -53,7 +53,6 @@ function FollowYoutube(){
 const loadingScreenElement = document.querySelector(".loading");
 let loadRandomTime = Math.floor(Math.random() * 101 / 10);
 let yonjuu = Math.floor(Math.random() * 20 + 2);
-
 let progress = 0;
 const fill = document.getElementById('progress-fill');
 const interval = setInterval(() => {
