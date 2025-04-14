@@ -63,7 +63,7 @@ if (ultraUniqueImageSwitch === 1 && ultraUniqueImageContainer) {
   ultraUniqueImageContainer.innerHTML = `
     <img 
       id="loading-image" 
-      src="./.img/osaka-kansai-banpaku.png" 
+      src="https://cnts-1.accounts.expo2025.or.jp/auth/asset/img/logo_01.png" 
       onselect="return false" 
       onmousedown="return false"
     >
