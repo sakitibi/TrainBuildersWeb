@@ -50,22 +50,49 @@ function FollowYoutube(){
 }
 
 // 他と絶対かぶらない変数名に変更！
-const loadingScreenElement = document.querySelector(".loading");
-let loadRandomTime = Math.floor(Math.random() * 101 / 10);
-let yonjuu = Math.floor(Math.random() * 20 + 2);
-let progress = 0;
-const fill = document.getElementById('progress-fill');
-const interval = setInterval(() => {
-  progress += Math.random() * loadRandomTime; // ランダムに進む
-  loadRandomTime = Math.floor(Math.random() * 101 / 10);
-  if (progress >= 40 && yonjuu > 0) {
-    progress = 40;
-    yonjuu = yonjuu - 1;
+const ultraUniqueLoadingScreenEl = document.querySelector(".loading");
+let ultraUniqueRandomSpeed = Math.floor(Math.random() * 101 / 10);
+let ultraUniqueCooldown = Math.floor(Math.random() * 20 + 2);
+let ultraUniqueImageSwitch = Math.floor(Math.random() * 2);
+let ultraUniqueImageContainer = document.getElementById("image-container");
+let ultraUniqueProgress = 0;
+let ultraUniqueProgressFill = document.getElementById('progress-fill');
+let ultraUniqueProgressText = document.getElementById('progress-text');
+
+if (ultraUniqueImageSwitch === 1 && ultraUniqueImageContainer) {
+  ultraUniqueImageContainer.innerHTML = `
+    <img 
+      id="loading-image" 
+      src="./.img/osaka-kansai-banpaku.png" 
+      onselect="return false" 
+      onmousedown="return false"
+    >
+  `;
+}
+
+// プログレスバーを更新するタイマー
+const ultraUniqueProgressInterval = setInterval(() => {
+  ultraUniqueRandomSpeed = Math.floor(Math.random() * 101 / 10);
+  if (ultraUniqueProgress <= 100) {
+    ultraUniqueProgressText.innerHTML = `${ultraUniqueProgress}%`; 
   }
-  if (progress >= 110) {
-    progress = 110;
-    clearInterval(interval);
-    loadingScreenElement.classList.add("loaded");
+  if (ultraUniqueProgress >= 40 && ultraUniqueCooldown > 0) {
+    ultraUniqueCooldown -= 1;
+  } else if (ultraUniqueProgress >= 100) {
+    ultraUniqueProgress = 100;
+    ultraUniqueProgressText.innerHTML = '100%';
+    clearInterval(ultraUniqueProgressInterval);
+    ultraUniqueLoadingScreenEl.classList.add("loaded");
+
+  } else {
+    ultraUniqueProgress += Math.floor(Math.random() * ultraUniqueRandomSpeed); // ランダムに進む
   }
-  fill.style.width = progress + '%';
+  ultraUniqueProgressFill.style.width = ultraUniqueProgress + '%';
 }, 200);
+
+while (ultraUniqueProgress >= 100) {
+  ultraUniqueProgressText.innerHTML = '100%';
+}
+while (ultraUniqueProgress === 40 && ultraUniqueCooldown > 0) {
+  ultraUniqueProgress = 40;
+}
