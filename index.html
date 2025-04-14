@@ -12,11 +12,15 @@
 <body class="body">
     <div class="loading">
         <p class="loading-text">Loading...</p>
-        <img src="./appicon.icns" onselect="return false" onmousedown="return false">
+        <div id="image-container">
+            <img src="appicon.icns" onselect="return false" onmousedown="return false">
+        </div>
         <div class="spinner"></div>
+            <p id="progress-text" style="color: white;font-size: 25px;font-weight: 700;margin-bottom: 25px;">0%</p>
         <div class="progress-bar">
             <div class="progress-fill" id="progress-fill"></div>
         </div>
+    </div>
     </div>
     <tbw-main-window>
         <div class="home-window">
