@@ -7,6 +7,8 @@
 ### cd ~/ ダウンロードしたファイルのあるディレクトリのフルパス
 ### sudo spctl --master-disable
 ### sudo xattr -rd com.apple.quarantine ダウンロードしたファイルの名前
+### sudo spctl --master-disableの後にシステム設定からプライバシーとセキュリティを選んで
+### アプリケーションの実行許可を全てのアプリを許可に設定する
 <h3>
   <a href="https://sakitibi-com9.webnode.jp/page/10">TrainBuildersの利用規約</a>
 </h3>
