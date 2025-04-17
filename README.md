@@ -3,7 +3,7 @@
 ## 自動更新:不可能
 ### (アップデートが入りましたら12ninアカウントのメールアドレスへお送りします)
 ## 12ninアカウント:必須
-## たまに出るアプリを開いたときのOS側の警告アラートは無視して下さい
+## sudo xattr -rd com.apple.quarantine TrainBuilders.Web.zip
 <h3>
   <a href="https://sakitibi-com9.webnode.jp/page/10">TrainBuildersの利用規約</a>
 </h3>
