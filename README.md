@@ -12,6 +12,7 @@
 ### 正しくやれば左上のアプリの名前を表示する所がTrainBuildersになっています！
 <h3>
   それでも出来ない場合は<a href="https://sakitibi-com9.webnode.jp/page/3">フィードバック</a>をお送り下さい
+  <br>
   <a href="https://sakitibi-com9.webnode.jp/page/10">TrainBuildersの利用規約</a>
 </h3>
 開発者をフォロー
