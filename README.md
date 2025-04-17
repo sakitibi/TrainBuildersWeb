@@ -11,6 +11,8 @@
 #### アプリケーションの実行許可を全てのアプリを許可に設定する
 #### 正しくやれば左上の起動中のアプリの名前を表示する所が TrainBuilders になっています！
 #### 注意 上記のことをする前にダウンロードしたファイルを開かないで下さい!アプリが壊れます
+#### 後ダウンロードする際はChromeでお願いします。Safariだとエラーになる可能性が有ります
+<h3>Chromeは<a href="https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg">ここから</a>ダウンロード</h3>
 <h3>
   それでも出来ない場合は<a href="https://sakitibi-com9.webnode.jp/page/3">フィードバック</a>をお送り下さい
   <br>
