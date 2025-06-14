@@ -19,6 +19,9 @@ document.getElementById('follow-youtube').addEventListener('click', function() {
 document.getElementById('follow-x').addEventListener('click', function() {
     location.href = "https://x.com/torebiru";
 });
+document.getElementById('documents').addEventListener('click', function() {
+    location.href = "./docs";
+});
 
 function openPopup() {
     var uaOs = window.navigator.userAgent.toLowerCase();
