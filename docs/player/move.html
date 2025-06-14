@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrainBuilders Docs Player Moving</title>
+    <style>
+        footer{
+            text-align: center;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        body{
+            background-color: #3eaf4f;
+            animation: bg-color 200s infinite;
+        }
+        @keyframes bg-color {
+            from {
+            background-color: #3eaf4f;
+            }
+            10% {
+            background-color: #16cd78;
+            }
+            20% {
+            background-color: #1abc9c;
+            }
+            30% {
+            background-color: #16cd78;
+            }
+            40% {
+            background-color: #00ff00;
+            }
+            50% {
+            background-color: #16cd78;
+            }
+            60% {
+            background-color: #1abc9c;
+            }
+            70% {
+            background-color: #16cd78;
+            }
+            80% {
+            background-color: #ff0000;
+            }
+            90% {
+            background-color: #0000ff;
+            }
+            to {
+            background-color: #3eaf4f;
+            }
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: #ffffff;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="contents">
+        <h1>フィールド上での操作方法</h1>
+        <p><a href="./">戻る</a></p>
+        <main>
+            <p>上矢印キーまたはWキー 上に移動</p>
+            <p>左矢印キーまたはAキー 左に移動</p>
+            <p>下矢印キーまたはSキー 下に移動</p>
+            <p>右矢印キーまたはDキー 右に移動</p>
+        </main>
+    </div>
+</body>
+</html>
