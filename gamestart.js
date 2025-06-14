@@ -31,14 +31,23 @@ function openPopup() {
 function startGame(){
     let file = document.getElementById('file');
     let filepath = document.getElementById('filepath');
-    file.innerHTML = "このURLを開いて下さい";
-    filepath.innerHTML = "file:///Applications/TrainBuilders.app/Contents/Resources/index.html";
+    if(window.confirm("アプリ版ですか?")){
+        location.href = "trainbuilders://";
+    } else {
+        file.innerHTML = "このURLを開いて下さい";
+        filepath.innerHTML = "file:///Applications/TrainBuilders.app/Contents/Resources/index.html";
+    } 
 }
 function QRcodestartGame(){
     let file = document.getElementById('file');
     let filepath = document.getElementById('filepath');
-    file.innerHTML = "このQRコードを読み取って下さい";
-    filepath.innerHTML = '<img src="./QR_629278.svg" alt=""  onselectstart="return false;" onmousedown="return false;" />';
+    if(window.confirm("アプリ版ですか?")){
+        file.innerHTML = "このQRコードを読み取って下さい";
+        filepath.innerHTML = '<img src="./8e364128e0f6ae414e0c2bfa4620af0009999f37.png" alt="trainbuilders://"  onselectstart="return false;" onmousedown="return false;" />';
+    } else {
+        file.innerHTML = "このQRコードを読み取って下さい";
+        filepath.innerHTML = '<img src="./QR_629278.svg" alt="file:///Applications/TrainBuilders.app/Contents/Resources/index.html"  onselectstart="return false;" onmousedown="return false;" />';
+    }
 }
 function FollowYoutube(){
     let Dev = Math.floor(Math.random() * 2);
