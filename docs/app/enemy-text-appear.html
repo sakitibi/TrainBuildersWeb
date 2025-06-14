@@ -310,6 +310,19 @@
                         `);
                     }
                 });
+
+                setInterval(() => {
+                    document.querySelectorAll("img").forEach(function(img, e){
+                        img.addEventListener("select", function(){
+                            e.preventDefault();
+                        });
+                    });
+                    document.querySelectorAll("img").forEach(function(img, e){
+                        img.addEventListener("mousedown", function(){
+                            e.preventDefault();
+                        });
+                    });
+                }, 50);
     </script>
 </body>
 </html>
