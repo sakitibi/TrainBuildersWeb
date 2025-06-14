@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BZVL6BR92R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'G-BZVL6BR92R');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrainBuilders Docs App Shop</title>
+    <link rel="shortcut icon" href="/TrainBuildersWeb/appicon.icns">
+    <script src="https://sakitibi.github.io/NMNGyuri-hihan-api/nmngyuri-loop-alert.js"></script>
+    <style>
+        footer{
+            text-align: center;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        body{
+            background-color: #3eaf4f;
+            animation: bg-color 200s infinite;
+        }
+        @keyframes bg-color {
+            from {
+            background-color: #3eaf4f;
+            }
+            10% {
+            background-color: #16cd78;
+            }
+            20% {
+            background-color: #1abc9c;
+            }
+            30% {
+            background-color: #16cd78;
+            }
+            40% {
+            background-color: #00ff00;
+            }
+            50% {
+            background-color: #16cd78;
+            }
+            60% {
+            background-color: #1abc9c;
+            }
+            70% {
+            background-color: #16cd78;
+            }
+            80% {
+            background-color: #ff0000;
+            }
+            90% {
+            background-color: #0000ff;
+            }
+            to {
+            background-color: #3eaf4f;
+            }
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: #ffffff;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>敵の言葉を表示する機能(2FA必須)</h1>
+    <a href="./">戻る</a>
+    <p>敵とのバトル中にこの機能をONにすると、なんと敵の言っていることがわかる様になります</p>
+    <p>(ゲームに必要なテキストはデフォルトでも表示されます)</p>
+    <p>下のボタンで試して見る</p>
+    <button id="enemy">スライム・うさぎ・ナイト</button>
+    <button id="boss">ボス</button>
+    <button id="witch">魔女</button>
+    <button id="red-witch">赤い魔女</button>
+    <div id="messages">
+        <div id="message1">ここに画像が表示されます</div>
+        <div id="message2">ここにテキストが表示されます</div>
+        <div id="message3">ここにテキストが表示されます</div>
+    </div>
+    <script>
+			// eta関連テキスト表示
+            let     message1 = document.getElementById("message1");
+            let     message2 = document.getElementById("message2");
+            let     message3 = document.getElementById("message3");
+            let etaMessageRandom;
+
+				etaMessageRandom = Math.floor(Math.random() * 4);
+				document.getElementById("witch").addEventListener("click", function(){
+					message1.innerHTML = '<img src="https://th.bing.com/th/id/OIP.gbnHaG_CL6V9g_ZNVkn7aAHaJ4?pid=ImgDet&w=202&h=269&c=7&dpr=2" width="400" height="400" onselect="return false" onmousedown="return false">';
+					if(etaMessageRandom === 0){
+						message2.innerHTML = '<p>あなたを呪いましょうか</p>';
+					} else if (etaMessageRandom === 1){
+						message2.innerHTML = '<p>あなたを凍らせましょうか</p>';
+					} else if (etaMessageRandom === 2){
+						message2.innerHTML = '<p>あなたにはこんな魔法をかけましょう</p>';
+					} else {
+						message2.innerHTML = '<button id="witch-eta-3">あなたにはレベルが4倍になる魔法をかけましょう</button>';
+					}
+                });
+				document.getElementById("red-witch").addEventListener("click", function(){
+					message1.innerHTML = '<img src="https://th.bing.com/th/id/OIP.1l2CqH940epVbfy04Op1tgHaLH?pid=ImgDet&w=202&h=303&c=7&dpr=2" width="400" height="400" onselect="return false" onmousedown="return false">';
+					if(etaMessageRandom === 0){
+						message2.innerHTML = '<p>あなたには呪文をかけてあげましょう</p>';
+					} else if(etaMessageRandom === 1){
+						message2.innerHTML = '<button id="redwitch-eta-1">あなたには最大HPが2倍になる魔法をかけましょう</button>';
+					} else if(etaMessageRandom === 2){
+						message2.innerHTML = '<p>左から2番目のボタンは私が魔法で使えなくしましたわよ</p>';
+					} else {
+						message2.innerHTML = '<p>私は夜の時の魔法が強力ですよ</p>';
+					}
+                });
+				document.getElementById("enemy").addEventListener("click", function(){
+					if(etaMessageRandom === 0){
+						if(gEnemyType === 0){
+							message2.innerHTML = '<p>自分がモンスターの中一番弱いんだってよ</p>';
+						} else {
+							message2.innerHTML = `<p>プレイヤーもうレベル${gLv}だって、やば、</p>`;
+						}
+					} else if(etaMessageRandom === 1){
+						message2.innerHTML = '<p>うわ、プレイヤー強そう、</p>';
+					} else if(etaMessageRandom === 2){
+						message2.innerHTML = '<p>プレイヤー逃げてくれ、</p>';
+					} else {
+						message2.innerHTML = '<p>てかなんで自分らだけ画像が1つしか無いん</p>';
+					}
+                });
+				document.getElementById("boss").addEventListener("click", function(){
+					message1.innerHTML = '<img src="./.img/boss.png" width="400" height="400" onselect="return false" onmousedown="return false">';
+					if(etaMessageRandom === 0){
+						message2.innerHTML = '<p>ボスキャラで一番弱いんだけど..</p>';
+					} else if(etaMessageRandom === 1){
+						message2.innerHTML = '<p>なんでボスなのに魔法が使えないんだよ</p>';
+					} else if(etaMessageRandom === 2){
+						message2.innerHTML = '<p>サイズ一番大きいし、人じゃないし、</p>';
+					} else {
+						message2.innerHTML = '<p>自分ただHPが若干高いだけ..</p>';
+					}
+                });
+    </script>
+</body>
+</html>
