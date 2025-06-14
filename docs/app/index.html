@@ -80,8 +80,19 @@
 </head>
 <body>
     <h1>TrainBuildersアプリ版公式ドキュメントです!</h1>
-    <button id="home">ホームへ</button>
-    <button id="web-edition">Web版</button>
+    <h2>アプリ版限定要素</h2>
+    <main>
+        <ul>
+            <li><a href="../enemys/witch/collections">魔女系</a>敵キャラクター追加</li>
+            <li><a href="./shop">ショップ</a></li>
+            <li><a href="./enemy-text-appear">敵の言葉を表示する機能(2FA必須)</a></li>
+            <li><a onclick="alert('この機能は現在ご利用になれません')">WebSocket通信(現在利用不可)</a></li>
+        </ul>
+    </main>
+    <footer>
+        <button id="home">ホームへ</button>
+        <button id="web-edition">Web版</button>
+    </footer>
     <script>
         document.getElementById("web-edition").addEventListener("click", function(){
             location.href = "../web";
