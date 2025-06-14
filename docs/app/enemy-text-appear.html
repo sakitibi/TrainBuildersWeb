@@ -144,11 +144,7 @@
                     etaMessageRandom = Math.floor(Math.random() * 4);
                     message1.innerHTML = "";
 					if(etaMessageRandom === 0){
-						if(gEnemyType === 0){
-							message2.innerHTML = '<p>自分がモンスターの中一番弱いんだってよ</p>';
-						} else {
-							message2.innerHTML = `<p>プレイヤーもうレベル${gLv}だって、やば、</p>`;
-						}
+						message2.innerHTML = '<p>自分がモンスターの中一番弱いんだってよ</p>';
 					} else if(etaMessageRandom === 1){
 						message2.innerHTML = '<p>うわ、プレイヤー強そう、</p>';
 					} else if(etaMessageRandom === 2){
