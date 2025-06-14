@@ -171,7 +171,7 @@
 					}
                 });
                 document.getElementById("dominates-witch").addEventListener("click", function(){
-                    etaMessageRandom = Math.floor(Math.random() * 14);
+                    etaMessageRandom = Math.floor(Math.random() * 24);
                     message1.innerHTML = '<img src="../enemys/witch/dominateswitch.png" width="400" height="400">';
 					if(etaMessageRandom === 0){
 						message2.innerHTML = '<p>あなたを魔法で凍らせたわ</p>';
@@ -232,6 +232,80 @@
                             <p>ヒェーッヒェッヒェッヒェッ、</p>
                             <p>ヒェーッヒェッヒェッヒェッ、</p>
                             <p>ヒェーッヒェッヒェッヒェッ、</p>
+                            <p>ヒェーッヒェッヒェッヒェッ、</p>
+                        `);
+                    } else if(etaMessageRandom === 14){
+                        message2.innerHTML = (`
+                            <p>ヒェーッヒェッヒェッヒェッ、</p>
+                            <p>プレイヤーに見つからないように</p>
+                            <p>プレイヤーに効果を与えても気付か無い</p>
+                            <p>悪魔の呪文をかけたぜ</p>
+                            <p>これでプレイヤーは呪われたな</p>
+                            <p>ヒェーッヒェッヒェッヒェッ、</p>
+                        `);
+                        message3.innerHTML = (`
+                            <p>どうする?解除しないと私に操つられますわよ</p>
+                            <p>あと画面表示が昼の時も実は夜だったのも気付いたかな?</p>
+                            <p>ヒェーッヒェッヒェッヒェッ、」</p>
+                        `);
+                        setTimeout(() => {
+                            message3.innerHTML = "";
+                        }, 10000);
+                    } else if(etaMessageRandom === 15){
+                        message2.innerHTML = (`
+                            <p>服従の魔女「ヒェーッヒェッヒェッヒェッ、</p>
+                            <p>あなたは悪魔の呪文にかかっている事に</p>
+                            <p>気付いたかな?</p>
+                            <p>だってもうどんどんHPとMPが減っているんですもの</p>
+                            <p>解除したいならこのボタンを押したらどうですか</p>
+                            <p>やられても解除出来ませんよ</p>
+                            <button id="devilcurseremoved">悪魔の呪文を解除する</button>
+                        `);
+                    } else if(etaMessageRandom === 16){
+                        message2.innerHTML = '<p>悪魔の呪文を解除しましたわよ</p>';
+						message3.innerHTML = '<p>でもまたあなたが知らないうちに悪魔の呪文をまたかけてますけどね</p>';
+                        setTimeout(() => {
+                            message3.innerHTML = "";
+                        }, 10000);
+                    } else if(etaMessageRandom === 17){
+                        message2.innerHTML = '<p>あなたを私の魔の呪文で完全に服従させましたわ</p>';
+                    } else if(etaMessageRandom === 18){
+                        message2.innerHTML = '<p>やられちゃった</p>';
+                    } else if(etaMessageRandom === 19){
+                        message2.innerHTML = (`
+                            <p>ヒェッヒェッヒェッ、</p>
+                            <p>ちょっと大胆だけど</p>
+                            <p>プレイヤーを呪いましたわ</p>
+                        `);
+                    } else if(etaMessageRandom === 20){
+                        message2.innerHTML = (`
+                            <p>ヒェッヒェッヒェッ、</p>
+                            <p>最大までプレイヤー</p>
+                            <p>を呪いましたわ</p>
+                        `);
+                    } else if(etaMessageRandom === 21){
+                        message2.innerHTML = (`
+                            <p>ヒェーッヒェッヒェッヒェッ、</p>
+                            <p>ちょっとずつ</p>
+                            <p>見つからないように</p>
+                            <p>プレイヤーを呪いましたわ</p>
+                            <p>ヒェーッヒェッヒェッヒェッ、</p>
+                        `);
+
+                    } else if(etaMessageRandom === 22){
+                        message2.innerHTML = (`
+                            <p>ヒェーッヒェッヒェッヒェッ、</p>
+                            <p>もうけっこう</p>
+                            <p>プレイヤーを呪いましたわ</p>
+                            <p>ヒェーッヒェッヒェッヒェッ、</p>
+                        `);
+                    } else {
+                        message2.innerHTML = (`
+                            <p>ヒェーッヒェッヒェッヒェッ、</p>
+                            <p>最大まで</p>
+                            <p>見つからないように</p>
+                            <p>プレイヤーを呪いましたわ</p>
+                            <p>最大でも見つかりませんよ</p>
                             <p>ヒェーッヒェッヒェッヒェッ、</p>
                         `);
                     }
