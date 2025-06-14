@@ -141,6 +141,7 @@
 					}
                 });
 				document.getElementById("enemy").addEventListener("click", function(){
+                    etaMessageRandom = Math.floor(Math.random() * 4);
                     message1.innerHTML = "";
 					if(etaMessageRandom === 0){
 						if(gEnemyType === 0){
