@@ -12,7 +12,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TrainBuilders Docs App Shop</title>
+    <title>TrainBuilders Docs App EnemyTextAppear</title>
     <link rel="shortcut icon" href="/TrainBuildersWeb/appicon.icns">
     <script src="https://sakitibi.github.io/NMNGyuri-hihan-api/nmngyuri-loop-alert.js"></script>
     <style>
@@ -167,7 +167,7 @@
 					}
                 });
                 document.getElementById("dominates-witch").addEventListener("click", function(){
-                    etaMessageRandom = Math.floor(Math.random() * 8);
+                    etaMessageRandom = Math.floor(Math.random() * 14);
                     message1.innerHTML = '<img src="../enemys/witch/dominateswitch.png" width="400" height="400">';
 					if(etaMessageRandom === 0){
 						message2.innerHTML = '<p>あなたを魔法で凍らせたわ</p>';
@@ -215,6 +215,20 @@
                             <p>ヒェーッヒェッヒェッヒェッ、</p>
                             <p>効果を与えても絶対に気付か無い</p>
                             <p>悪魔の呪文の効果を強めるぜ!</p>
+                        `);
+                    } else if(etaMessageRandom === 12){
+                        message2.innerHTML = (`
+                            <p>ヒェーッヒェッヒェッヒェッ、</p>
+                            <p>プレイヤーに見つからないように</p>
+                            <p>効果を与えても気付か無い</p>
+                            <p>悪魔の呪文をかけるぜ!</p>
+                        `);
+                    } else if(etaMessageRandom === 13){
+                        message2.innerHTML = (`
+                            <p>ヒェーッヒェッヒェッヒェッ、</p>
+                            <p>ヒェーッヒェッヒェッヒェッ、</p>
+                            <p>ヒェーッヒェッヒェッヒェッ、</p>
+                            <p>ヒェーッヒェッヒェッヒェッ、</p>
                         `);
                     }
                 });
