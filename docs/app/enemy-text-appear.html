@@ -110,7 +110,7 @@
 					} else if (etaMessageRandom === 2){
 						message2.innerHTML = '<p>あなたにはこんな魔法をかけましょう</p>';
 					} else {
-						message2.innerHTML = '<button id="witch-eta-3">あなたにはレベルが4倍になる魔法をかけましょう</button>';
+						message2.innerHTML = '<button id="witch-eta-3" disabled>あなたにはレベルが4倍になる魔法をかけましょう</button>';
 					}
                 });
 				document.getElementById("red-witch").addEventListener("click", function(){
@@ -118,7 +118,7 @@
 					if(etaMessageRandom === 0){
 						message2.innerHTML = '<p>あなたには呪文をかけてあげましょう</p>';
 					} else if(etaMessageRandom === 1){
-						message2.innerHTML = '<button id="redwitch-eta-1">あなたには最大HPが2倍になる魔法をかけましょう</button>';
+						message2.innerHTML = '<button id="redwitch-eta-1" disabled>あなたには最大HPが2倍になる魔法をかけましょう</button>';
 					} else if(etaMessageRandom === 2){
 						message2.innerHTML = '<p>左から2番目のボタンは私が魔法で使えなくしましたわよ</p>';
 					} else {
@@ -141,7 +141,7 @@
 					}
                 });
 				document.getElementById("boss").addEventListener("click", function(){
-					message1.innerHTML = '<img src="./.img/boss.png" width="400" height="400" onselect="return false" onmousedown="return false">';
+					message1.innerHTML = '<img src="../enemys/boss.png" width="400" height="400" onselect="return false" onmousedown="return false">';
 					if(etaMessageRandom === 0){
 						message2.innerHTML = '<p>ボスキャラで一番弱いんだけど..</p>';
 					} else if(etaMessageRandom === 1){
