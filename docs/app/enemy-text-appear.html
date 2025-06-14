@@ -76,6 +76,19 @@
         button:hover {
             background-color: #0056b3;
         }
+        button[aria-disabled="true"] {
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+
+        button:not([aria-disabled]) {
+            cursor: pointer;
+        }
+
+        button[disabled] {
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
     </style>
 </head>
 <body>
@@ -126,6 +139,7 @@
 					}
                 });
 				document.getElementById("enemy").addEventListener("click", function(){
+                    message1.innerHTML = "";
 					if(etaMessageRandom === 0){
 						if(gEnemyType === 0){
 							message2.innerHTML = '<p>自分がモンスターの中一番弱いんだってよ</p>';
@@ -151,6 +165,58 @@
 					} else {
 						message2.innerHTML = '<p>自分ただHPが若干高いだけ..</p>';
 					}
+                });
+                document.getElementById("dominates-witch").addEventListener("click", function(){
+                    etaMessageRandom = Math.floor(Math.random() * 8);
+                    message1.innerHTML = '<img src="../enemys/witch/dominateswitch.png" width="400" height="400">';
+					if(etaMessageRandom === 0){
+						message2.innerHTML = '<p>あなたを魔法で凍らせたわ</p>';
+					} else if(etaMessageRandom === 1){
+						message2.innerHTML = '<p>あなたから魔法でHPを奪い取ったわ</p>';
+					} else if(etaMessageRandom === 2){
+						message2.innerHTML = '<p>普通の女に服従の呪文をかけてやりましたわ</p>';
+					} else if(etaMessageRandom === 3){
+						message2.innerHTML = '<p>魔法で昼から夜にしたわ</p>';
+					} else if(etaMessageRandom === 4){
+                        message2.innerHTML = '<p>あなたを女の子にしてやりましたわ</p>';
+                    } else if(etaMessageRandom === 5){
+                        message2.innerHTML = '<p>プレイヤーから通貨を2倍取れましたわ!</p>';
+                    } else if(etaMessageRandom === 6){
+                        message2.innerHTML = (`
+                            <p>プレイヤーから通貨を2倍取って</p>
+                            <p>HPを減らしましたわ!</p>
+                        `);
+                    } else if(etaMessageRandom === 7){
+                        message2.innerHTML = (`
+                            <p>服従の魔女「ヒェーッヒェッヒェッヒェッ、</p>
+                            <p>服従の魔法で普通の女を服従させてましたわ</p>
+                            <p>あなたにも服従の魔法をかけちゃうよ</p>
+                            <p>私は服従の魔女、さあ、プレイヤーよ、かかってこい！」</p>
+                        `);
+                    } else if(etaMessageRandom === 8){
+                        message2.innerHTML = (`
+                            <p>プレイヤーにはもう魔の呪文を</p>
+                            <p>かけていたみたいですわ!</p>
+                        `);
+                    } else if(etaMessageRandom === 9){
+                        message2.innerHTML = (`
+                            <p>プレイヤーにはすでに</p>
+                            <p>効果を与えても気付か無い</p>
+                            <p>悪魔の呪文をかけていましたわ</p>
+                        `);
+                    } else if(etaMessageRandom === 10){
+                        message2.innerHTML = (`
+                            <p>ヒェーッヒェッヒェッヒェッ、</p>
+                            <p>プレイヤーに見つからないように</p>
+                            <p>魔の呪文をかけましたわ!</p>
+                        `);
+                    } else if(etaMessageRandom === 11){
+                        message2.innerHTML = (`
+                            <p>ヒェーッヒェッヒェッヒェッ、</p>
+                            <p>効果を与えても絶対に気付か無い</p>
+                            <p>悪魔の呪文の効果を強めるぜ!</p>
+                        `);
+                    }
                 });
     </script>
 </body>
