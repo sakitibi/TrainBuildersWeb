@@ -12,8 +12,8 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TrainBuilders Docs</title>
-    <link rel="shortcut icon" href="../appicon.icns">
+    <title>TrainBuilders Docs Enemys DominatesWitch</title>
+    <link rel="shortcut icon" href="/TrainBuildersWeb/appicon.icns">
     <script src="https://sakitibi.github.io/NMNGyuri-hihan-api/nmngyuri-loop-alert.js"></script>
     <style>
         footer{
@@ -80,37 +80,26 @@
 </head>
 <body>
     <div id="content">
-        <h1>TrainBuilders公式ドキュメントです!</h1>
-        <h2>このゲームの説明</h2>
+        <h1>服従の魔女</h1>
+        <p><a href="/TrainBuildersWeb/docs/app/shop">ショップ</a>の女を服従させたのも</p>
+        <p>プレイヤーに<a href="/TrainBuildersWeb/docs/effects/curse/minidevil-curse">魔の呪文</a>や<a href="/TrainBuildersWeb/docs/effects/curse/devil-curse">悪魔の呪文</a>をかけたのも</p>
+        <p>プレイヤーや服従の魔女自身を女の子に変身させたのも</p>
+        <p>プレイヤーにとって都合の良いボタンを設置して騙して呪文をかけたのも(<a href="/TrainBuildersWeb/docs/app/enemy-text-appear">enemy-text-appear</a>限定)</p>
+        <p>全て服従の魔女である</p>
+        <img src="./dominateswitch.png" alt="服従の魔女" width="500" height="500" onselect="return false" onmousedown="return false">
+        <p><a href="./collections">戻る</a></p>
         <main>
-            <p>プレイヤーは突然<a href="./enemys/witch/collections">魔女たち</a>に乗っ取られた</p>
-            <p>ワールドにスポーンします</p>
-            <p>このゲームの最終目標 <a href="./enemys/witch/dominates-witch">服従の魔女</a>を倒すこと(Web版では<a href="./enemys/boss">ボス</a>を倒すこと)</p>
+            <p>HP 昼スポーン時 425 夜スポーン時 845</p>
             <details>
-                <summary>詳細</summary>
-                <ul>
-                    <li><a href="./player">プレイヤー</a></li>
-                    <li><a href="./enemys">敵キャラクター</a></li>
-                    <li><a href="./maps">マップ</a></li>
-                    <li><a href="./effects">エフェクト</a></li>
-                    <li><a href="./helps">ヘルプ</a></li>
-                </ul>
+                <summary>魔法の種類</summary>
+                <p>攻撃魔法 プレイヤーに一定のダメージを与える</p>
+                <p>回復魔法 自分自身に一定のHPを回復させる</p>
+                <p>バリア魔法 自分自身にバリアを一定ターン張る</p>
+                <p>呪魔法 <a href="/TrainBuildersWeb/docs/effects/curses/red-witch-curse">一定ターン呪われる魔法</a>をプレイヤーにかける</p>
+                <p>氷魔法 <a href="/TrainBuildersWeb/docs/effects/flosted">一定ターン凍らされる魔法</a>をプレイヤーにかける</p>
             </details>
+            <p>ドロップアイテム なし</p>
         </main>
-        <footer>
-            <button id="app-edition">アプリ版</button>
-            <button id="web-edition">Web版</button>
-        </footer>
     </div>
-    <script>
-        document.getElementById("app-edition").addEventListener("click", function(){
-            location.href = "./app";
-        });
-
-        document.getElementById("web-edition").addEventListener("click", function(){
-            location.href = "./web";
-        })
-    </script>
-    <script src="https://sakitibi.github.io/12ninadmanager.com/js/12nin_vignette.js"></script>
 </body>
 </html>
