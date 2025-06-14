@@ -68,9 +68,19 @@
     </style>
 </head>
 <body>
-    <h1>TrainBuilders公式ドキュメントです!</h1>
-    <button id="app-edition">アプリ版</button>
-    <button id="web-edition">Web版</button>
+    <div id="contents">
+        <h1>TrainBuilders公式ドキュメントです!</h1>
+        <h2>このゲームの説明</h2>
+        <main>
+            <p>プレイヤーは突然<a href="./app/witch/collections">魔女たち</a>に乗っ取られた</p>
+            <p>ワールドにスポーンします</p>
+            <p>このゲームの最終目標 <a href="./app/dominates-witch/">服従の魔女</a>を倒すこと(Web版では<a href="./boss">ボス</a>を倒すこと)</p>
+        </main>
+        <footer>
+            <button id="app-edition">アプリ版</button>
+            <button id="web-edition">Web版</button>
+        </footer>
+    </div>
     <script>
         document.getElementById("app-edition").addEventListener("click", function(){
             location.href = "./app";
