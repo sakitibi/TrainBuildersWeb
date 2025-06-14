@@ -68,11 +68,15 @@
     </style>
 </head>
 <body>
-    <h1>TrainBuilders公式ドキュメントアプリ版です!</h1>
+    <h1>TrainBuildersアプリ版公式ドキュメントです!</h1>
+    <button id="home">ホームへ</button>
     <button id="web-edition">Web版</button>
     <script>
         document.getElementById("web-edition").addEventListener("click", function(){
             location.href = "../web";
+        });
+        document.getElementById("home").addEventListener("click", function(){
+            location.href = "../";
         });
     </script>
 </body>
