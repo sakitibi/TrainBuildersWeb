@@ -13,12 +13,12 @@ const con4 = "Tra";
 
 async function loadConfig() {
   try{
-      if (window.electronAPI != undefined) {
+      if (window.electronAPI.getLocalIP() != undefined) {
         // ここにコンテンツを記載(難読化の為)
         main.innerHTML = (`
-            <h1> ${con3}${con5}について</h1>
+            <h1> ${con3}${con5}${con7}について</h1>
             <main>
-                <h2>${com}は${con1}${con2}${con8}${con6}${con7}</h2>
+                <h2>${com}は${con1}${con2}${con8}${con6}</h2>
                 <p>皆様のご理解とご協力をお願いいたします</p>
             </main>
         `);
