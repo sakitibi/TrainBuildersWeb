@@ -20,7 +20,7 @@
 </h3>
 <h4>開発者をフォロー</h4>
 <h4>
-  <a href="https://youtube.com/@12nintvSakitibi">@sakitibi</a>
+  <a href="https://youtube.com/channel/UCJcP2mfDCtKnADrbDDjT_8g">@sakitibi</a>
   <br>
   <a href="https://youtube.com/@torebiru">@torebiru</a>
 </h4>

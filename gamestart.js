@@ -53,9 +53,9 @@ function QRcodestartGame(){
     }
 }
 function FollowYoutube(){
-    let Dev = Math.floor(Math.random() * 2);
+    let Dev = KaikiIkki(2);
     if (Dev === 0){
-        location.href = "https://youtube.com/@12nintvSakitibi/?sub_confirmation=1";
+        location.href = "https://youtube.com/channel/UCJcP2mfDCtKnADrbDDjT_8g/?sub_confirmation=1";
     } else {
         location.href = "https://youtube.com/@torebiru/?sub_confirmation=1";
     }
@@ -63,9 +63,9 @@ function FollowYoutube(){
 
 // 他と絶対かぶらない変数名に変更！
 const ultraUniqueLoadingScreenEl = document.querySelector(".loading");
-let ultraUniqueRandomSpeed = Math.floor(Math.random() * 101 / 10);
-let ultraUniqueCooldown = Math.floor(Math.random() * 20 + 2);
-let ultraUniqueImageSwitch = Math.floor(Math.random() * 2);
+let ultraUniqueRandomSpeed = KaikiIkki(101 / 10);
+let ultraUniqueCooldown = KaikiIkki(20 + 2);
+let ultraUniqueImageSwitch = KaikiIkki(2);
 let ultraUniqueImageContainer = document.getElementById("image-container");
 let ultraUniqueProgress = 0;
 let ultraUniqueProgressFill = document.getElementById('progress-fill');
@@ -84,7 +84,7 @@ if (ultraUniqueImageSwitch === 1 && ultraUniqueImageContainer) {
 
 // プログレスバーを更新するタイマー
 const ultraUniqueProgressInterval = setInterval(() => {
-  ultraUniqueRandomSpeed = Math.floor(Math.random() * 101 / 10);
+  ultraUniqueRandomSpeed = KaikiIkki(101 / 10);
   if (ultraUniqueProgress <= 100) {
     ultraUniqueProgressText.innerHTML = `${ultraUniqueProgress}%`; 
   }
@@ -97,7 +97,7 @@ const ultraUniqueProgressInterval = setInterval(() => {
     ultraUniqueLoadingScreenEl.classList.add("loaded");
 
   } else {
-    ultraUniqueProgress += Math.floor(Math.random() * ultraUniqueRandomSpeed); // ランダムに進む
+    ultraUniqueProgress += KaikiIkki(ultraUniqueRandomSpeed); // ランダムに進む
   }
   ultraUniqueProgressFill.style.width = ultraUniqueProgress + '%';
 }, 200);
