@@ -21,40 +21,43 @@
     <meta name="google-site-verification" content="9ixNnFdyt0L5GyekZS6NMUTbS-6wGqSWMedNQcKndL8" />
 </head>
 <body class="body">
-    <div class="loading">
-        <p class="loading-text">Loading...</p>
-        <div id="image-container">
-            <img src="appicon.icns" onselect="return false" onmousedown="return false">
+    <div id="content">
+        <div class="loading">
+            <p class="loading-text">Loading...</p>
+            <div id="image-container">
+                <img src="appicon.icns" onselect="return false" onmousedown="return false">
+            </div>
+            <div class="spinner"></div>
+                <p id="progress-text" style="color: white;font-size: 25px;font-weight: 700;margin-bottom: 25px;">0%</p>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
         </div>
-        <div class="spinner"></div>
-            <p id="progress-text" style="color: white;font-size: 25px;font-weight: 700;margin-bottom: 25px;">0%</p>
-        <div class="progress-bar">
-            <div class="progress-fill" id="progress-fill"></div>
         </div>
+        <tbw-main-window>
+            <div class="home-window">
+                <h1>TrainBuilders</h1>
+                <p id="file">Welcome to the most exciting game ever! Get ready to embark on an amazing adventure.</p>
+                <p id="filepath"></p>
+                <br>
+                <button id="home-window button">Download</button>
+                <button id="start button">Start Game</button>
+                <button id="qrcode">Scan the QR code and Start the Game</button>
+                <button id="settings">Settings</button>
+                <button id="exit">Exit</button>
+                <br>
+                <button id="follow-youtube">開発者のYoutubeをフォロー</button>
+                <button id="follow-x">開発者のXをフォロー</button>
+                <button id="documents">公式ドキュメントに移動</button>
+            </div>
+            <footer align="center">
+                <iframe class="juunininadmanager" src="https://sakitibi-com9.webnode.jp/page/0" width="336" height="280"></iframe>
+                <iframe class="juunininadmanager" src="https://sakitibi-com9.webnode.jp/page/0" width="336" height="280"></iframe>
+            </footer>
+        </tbw-main-window>
     </div>
-    </div>
-    <tbw-main-window>
-        <div class="home-window">
-            <h1>TrainBuilders</h1>
-            <p id="file">Welcome to the most exciting game ever! Get ready to embark on an amazing adventure.</p>
-            <p id="filepath"></p>
-            <br>
-            <button id="home-window button">Download</button>
-            <button id="start button">Start Game</button>
-            <button id="qrcode">Scan the QR code and Start the Game</button>
-            <button id="settings">Settings</button>
-            <button id="exit">Exit</button>
-            <br>
-            <button id="follow-youtube">開発者のYoutubeをフォロー</button>
-            <button id="follow-x">開発者のXをフォロー</button>
-            <button id="documents">公式ドキュメントに移動</button>
-        </div>
-	<footer align="center">
-	    <iframe class="juunininadmanager" src="https://sakitibi-com9.webnode.jp/page/0" width="336" height="280"></iframe>
-	    <iframe class="juunininadmanager" src="https://sakitibi-com9.webnode.jp/page/0" width="336" height="280"></iframe>
-    	</footer>
-    </tbw-main-window>
     <script src="./gamestart.js" nonce=""></script>
-    <script src="https://sakitibi.github.io/13ninadmanager.com/js/13ninadmanager.js" nonce=""></script>
+    <script src="https://sakitibi.github.io/13ninadmanager.com/js/13ninadmanager.min.js" nonce=""></script>
+    <script src="https://sakitibi.github.io/13ninadmanager.com/js/13nin_vignette.js" nonce=""></script>
 </body>
 </html>
