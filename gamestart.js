@@ -8,7 +8,7 @@ document.getElementById('qrcode').addEventListener('click', function() {
     QRcodestartGame();
 });
 document.getElementById('settings').addEventListener('click', function() {
-    location.href = 'https://sakitibi-com9.webnode.jp/page/24/bf921c72-d969-5837-122a-20ba91bad023/';
+    location.href = 'https://sakitibi-com9.webnode.jp/page/24/b961c547-90b1-0d30-a87e-8bb1aa67eca9/';
 });
 document.getElementById('exit').addEventListener('click', function() {
     location.href = 'https://github.com/sakitibi/TrainBuildersWeb';
