@@ -12,7 +12,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TrainBuilders Docs Effects Sleeping</title>
+    <title>TrainBuilders Docs Enemys SkysWitch</title>
     <link rel="shortcut icon" href="/TrainBuildersWeb/appicon.icns">
     <script src="https://sakitibi.github.io/NMNGyuri-hihan-api/nmngyuri-loop-alert.js"></script>
     <style>
@@ -24,42 +24,42 @@
             text-decoration: none;
         }
         body{
-            background-color: #3eaf4f;
+            background-color: #5b5beb;
             animation: bg-color 200s infinite;
         }
         @keyframes bg-color {
             from {
-            background-color: #3eaf4f;
+            background-color: #5b5beb;
             }
             10% {
-            background-color: #16cd78;
+            background-color: #4b14a5;
             }
             20% {
-            background-color: #1abc9c;
+            background-color: #350676;
             }
             30% {
-            background-color: #16cd78;
+            background-color: #460261;
             }
             40% {
-            background-color: #00ff00;
+            background-color: #430952;
             }
             50% {
-            background-color: #16cd78;
+            background-color: #05288f;
             }
             60% {
-            background-color: #1abc9c;
+            background-color: #322784;
             }
             70% {
-            background-color: #16cd78;
+            background-color: #422b90;
             }
             80% {
-            background-color: #ff0000;
+            background-color: #4c1990;
             }
             90% {
-            background-color: #0000ff;
+            background-color: #471284;
             }
             to {
-            background-color: #3eaf4f;
+            background-color: #5b5beb;
             }
         }
         button {
@@ -80,13 +80,24 @@
 </head>
 <body>
     <div id="content">
-        <h1>眠り</h1>
-        <p><a href="./">戻る</a></p>
+        <h1>空の魔女</h1>
+        <p></p>
+        <img src="./skyswitch.png" alt="空の魔女画像" width="500" height="500" onselect="return false" onmousedown="return false">
+        <p><a href="./collections">戻る</a></p>
         <main>
-            <p>効果 効果が続いている間行動出来なくなる</p>
-            <p>空の魔女にかけられた場合は一部操られる</p>
+            <p>HP 昼スポーン時 810 夜スポーン時 1450</p>
+            <details>
+                <summary>魔法の種類</summary>
+                <p>飛行魔法 自分が<a href="/TrainBuildersWeb/docs/effects/frying">空を飛ぶ</a></p>
+                <p>攻撃魔法 プレイヤーから一定のHPを奪う</p>
+                <p>姿暗呪術 自分が<a href="/TrainBuildersWeb/docs/effects/invisibility">透明になる</a></p>
+                <p>浮遊魔法 プレイヤーを空に飛ばす</p>
+                <p>眠操呪術 プレイヤーを<a href="/TrainBuildersWeb/docs/effects/sleeping">眠らして操る</a></p>
+                <p>視奪呪術 プレイヤーの<a href="/TrainBuildersWeb/docs/effects/blindness">視界を奪う</a></p>
+                <p>封じ込め魔法(常時発動) プレイヤーを逃げられなくする</p>
+            </details>
+            <p>ドロップアイテム なし</p>
         </main>
     </div>
-    <script src="https://sakitibi.github.io/13ninadmanager.com/js/13nin_vignette.js"></script>
 </body>
 </html>
