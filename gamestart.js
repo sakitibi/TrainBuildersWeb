@@ -208,23 +208,9 @@ function FollowYoutube(){
 const ultraUniqueLoadingScreenEl = document.querySelector(".loading");
 let ultraUniqueRandomSpeed = KaikiIkki(101 / 10);
 let ultraUniqueCooldown = KaikiIkki(20 + 2);
-let ultraUniqueImageSwitch = KaikiIkki(2);
-let ultraUniqueImageContainer = document.getElementById("image-container");
 let ultraUniqueProgress = 0;
 let ultraUniqueProgressFill = document.getElementById('progress-fill');
 let ultraUniqueProgressText = document.getElementById('progress-text');
-
-if (ultraUniqueImageSwitch === 1 && ultraUniqueImageContainer) {
-  ultraUniqueImageContainer.innerHTML = `
-    <img 
-      id="loading-image" 
-      src="https://cnts-1.accounts.expo2025.or.jp/auth/asset/img/logo_01.png" 
-      onselect="return false" 
-      onmousedown="return false"
-    >
-  `;
-}
-
 // プログレスバーを更新するタイマー
 const ultraUniqueProgressInterval = setInterval(() => {
   ultraUniqueRandomSpeed = KaikiIkki(101 / 10);
