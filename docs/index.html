@@ -100,17 +100,13 @@
         </main>
         <footer>
             <button id="app-edition">アプリ版</button>
-            <button id="web-edition">Web版</button>
+            <button id="web-edition" disabled>Web版(廃止されました)</button>
         </footer>
     </div>
     <script>
         document.getElementById("app-edition").addEventListener("click", function(){
             location.href = "./app";
         });
-
-        document.getElementById("web-edition").addEventListener("click", function(){
-            location.href = "./web";
-        })
     </script>
     <script src="https://sakitibi.github.io/13ninadmanager.com/js/13nin_vignette.js"></script>
 </body>
