@@ -1,21 +1,13 @@
-document.getElementById('home-window button').addEventListener('click', function() {
-    openPopup();
-});
-document.getElementById('start button').addEventListener('click', function() {
-    startGame();
-});
-document.getElementById('qrcode').addEventListener('click', function() {
-    QRcodestartGame();
-});
+document.getElementById('home-window button').addEventListener('click', openPopup);
+document.getElementById('start button').addEventListener('click', startGame);
+document.getElementById('qrcode').addEventListener('click', QRcodestartGame);
 document.getElementById('settings').addEventListener('click', function() {
     location.href = 'https://sakitibi-com9.webnode.jp/page/24/b961c547-90b1-0d30-a87e-8bb1aa67eca9/';
 });
 document.getElementById('exit').addEventListener('click', function() {
     location.href = 'https://github.com/sakitibi/TrainBuildersWeb';
 });
-document.getElementById('follow-youtube').addEventListener('click', function() {
-    FollowYoutube();
-});
+document.getElementById('follow-youtube').addEventListener('click', FollowYoutube);
 document.getElementById('follow-x').addEventListener('click', function() {
     location.href = "https://x.com/torebiru";
 });
@@ -24,7 +16,7 @@ document.getElementById('documents').addEventListener('click', function() {
 });
 
 function openPopup() {
-    var uaOs = window.navigator.userAgent.toLowerCase();
+    const uaOs = window.navigator.userAgent.toLowerCase();
     if (uaOs.indexOf("mac os x") !== -1) {
         window.open("https://sakitibi-com9.webnode.jp/api/trainbuilders/login/24ac77a0-013e-45ae-97d1-b6cc59fb958a/", "popupWindow", "width=800,height=600");
     } else {
